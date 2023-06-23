@@ -5,7 +5,7 @@ $(function(){
   if(windowW > 1155){
     scrollNav();
   }else if(windowW <= 1154 && windowW > 980){
-
+    scrollNav();
   }else if(windowW <= 979 && windowW > 580){
 
   }else if(windowW <= 579){
