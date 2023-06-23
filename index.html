@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="./css/index_media.css">
+   <!-- Font: Noto Sans(+Korean), Comic Neue -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Noto+Sans&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+   <!-- aweosome icon -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <title>Portfolio</title>
+</head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div>
+          <h1><a href="#">PORTFOLIO</a></h1>
+          <nav>
+            <h2 class="hide">메인네비게이션</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <p class="close"><i class="fa-solid fa-xmark"></i></p>
+          </nav>
+        </div>
+        <p class="btn"><i class="fa-solid fa-bars"></i></p>
+      </header>
+      <div id="homeMain">
+        <h3>Thank you for coming</h3>
+      </div>
+      <article id="box01">
+        <h3>About Me</h3>
+        <section class="info">
+          <h4><img src="./img/Ellipse-1.png" alt="증명사진"></h4>
+            <ul>
+              <li>
+                <dfn>Name</dfn><span>Min-su Kim</span>
+              </li>
+              <li>
+                <dfn>Birth</dfn><span>MM.DD.YYYY</span>
+              </li>
+              <li>
+                <dfn>Residence</dfn><span>Seoul, Republic of Korea</span>
+              </li>
+              <li>
+                <dfn>Tel</dfn><span>&plus;82 10-0000-0000</span>
+              </li>
+              <li>
+                <dfn>Education</dfn><span>Bachelor's Degree</span>
+              </li>
+              <li>
+                <dfn>Lorem.</dfn><span>Lorem ipsum dolor sit.</span>
+              </li>
+              <li>
+                <dfn>Lorem.</dfn><span>Lorem ipsum dolor sit.</span>
+              </li>
+            </ul>
+        </section>
+        <section class="skill">
+          <h4>Skill</h4>
+          <div>
+            <ul>
+              <li>HTML<br /><span>80%</span></li>
+              <li>CSS<br /><span>80%</span></li>
+              <li>JAVASCRIPT<br /><span>50%</span></li>
+              <li>REACT<br /><span>60%</span></li>
+              <li>GIT<br /><span>70%</span></li>
+              <li>HTML<br /><span>80%</span></li>
+          </ul>
+          </div>
+        </section>
+      </article>
+      <article id="box02">
+        <div>
+          <h3>Project</h3>
+          <ul>
+            <li><a href="#">HTML/CSS</a></li>
+            <li><a href="#">JS</a></li>
+            <li><a href="#">REACT</a></li>
+          </ul>
+          <div id="gallery">
+            <div id="show">
+              <div id="all">
+                <figure>
+                  <img src="./img/Ellipse-1.png" alt="project01">
+                  <figcaption>1</figcaption>
+                </figure>
+                <figure>
+                  <img src="./img/Ellipse-2.png" alt="project02">
+                  <figcaption>2</figcaption>
+                </figure>
+                <figure>
+                  <img src="./img/Ellipse-3.png" alt="project03">
+                  <figcaption>3</figcaption>
+                </figure>
+                <figure>
+                  <img src="./img/Ellipse-4.png" alt="project04">
+                  <figcaption>4</figcaption>
+                </figure>
+                <figure>
+                  <img src="./img/Ellipse-5.png" alt="project05">
+                  <figcaption>5</figcaption>
+                </figure>
+                <figure>
+                  <img src="./img/Ellipse-6.png" alt="project06">
+                  <figcaption>6</figcaption>
+                </figure>
+              </div>
+            </div>
+            <p class="prev controls_btn"><i class="fa-solid fa-chevron-left"></i></p>
+            <p class="next controls_btn"><i class="fa-solid fa-chevron-right"></i></p>
+          </div>
+          <div id="modal">
+            <p class="close"><i class="fa-solid fa-xmark"></i></p>
+            <section>
+              <h4>no.01</h4>
+              <div>
+                <figure>
+                  <img src="./img/Ellipse-1.png" alt="project01">
+                  <figcaption>test01</figcaption>
+                </figure>
+                <dl>
+                  <dt>제작년도</dt>
+                  <dd>2023</dd>
+                  <dt>사용언어</dt>
+                  <dd>html css</dd>
+                  <dt>주소</dt>
+                  <dd><a href="#">http://www.naver.com</a></dd>
+                  <dt>설명</dt>
+                  <dd>A, B, C의 기능이 있는 프로젝트</dd>
+                </dl>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+      <article id="box03">
+        <div>
+          <div>
+            <h3>Contact</h3>
+            <p>Please fill in the form, and I'll get back to you as soon as possible.</p>
+          </div>
+          <form action="#">
+            <fieldset>
+              <legend class="hide">contact form</legend>
+              <label for="userName"></label>
+              <input type="text" id="userName" required placeholder="Name"/>
+              <label for="userEmail"></label>
+              <input type="text" id="userEmail" required placeholder="Email" />
+              <label for="userMsg"></label>
+              <textarea name="" id="userMsg" required placeholder="Text"></textarea>
+              <p><input type="submit" value="send message"></p>
+            </fieldset>
+          </form>
+        </div>
+      </article>
+      <aside id="top">
+        <a href="#homeMain">top</a>
+      </aside>
+      <footer>
+        <small>COPYRIGHT &copy; 2023 PORTFOLIO BY KIM ALL RIGHT RESERVED</small>
+      </footer>
+    </div>
+  </body>
+</html>
