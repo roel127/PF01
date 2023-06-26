@@ -58,7 +58,7 @@ function swipe(){
 // modal
 function modalFunc(tl, pic, yr, pg, url, txt){
   this.title = tl;
-  this.pic = pic;
+  this.pic = `${pic}.png`;
   this.year = yr;
   this.program = pg;
   this.url = url;
@@ -82,16 +82,15 @@ let myModal = [
   new modalFunc('title05', './img/Ellipse-5', '2023', 'HTML, CSS, JS', 'http://www.e.com', 'text05'),
   new modalFunc('title06', './img/Ellipse-6', '2023', 'HTML, CSS, JS', 'http://www.f.com', 'text06')
 ];
+
 const portF = document.querySelectorAll('#box02 #all>figure');
 const btnClose = document.querySelector('#modal .close');
-
 portF.forEach((item, index) => {
   item.addEventListener('click', function(){
     document.querySelector('#modal').style.display = 'block';
     myModal[index].viewAction();
   });
 })
-
 btnClose.addEventListener('click', function(){
   document.querySelector('#modal').style.display = 'none';
 })
