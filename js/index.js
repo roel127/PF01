@@ -72,7 +72,7 @@ modalFunc.prototype.viewAction = function(){
   document.querySelector('#modal figure>img').setAttribute('src', this.pic);
   document.querySelector('#modal figure>figcaption').innerHTML = this.title;
   document.querySelector('#modal dl>dd:nth-of-type(1)').innerHTML = this.year;
-  document.querySelector('#modal dl>dd:nth-of-type(2)').innerHTML = this.program
+  document.querySelector('#modal dl>dd:nth-of-type(2)').innerHTML = this.program;
   document.querySelector('#modal dl>dd:nth-of-type(3)>a').setAttribute('href', this.url);
   document.querySelector('#modal dl>dd:nth-of-type(3)>a').innerHTML = this.url;
   document.querySelector('#modal dl>dd:nth-of-type(4)').innerHTML = this.text;
