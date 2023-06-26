@@ -69,7 +69,7 @@ modalFunc.prototype.viewAction = function(){
   document.querySelector('#modal figure>img').setAttribute('src', this.pic);
   document.querySelector('#modal figure>figcaption').innerHTML = this.title;
   document.querySelector('#modal dl>dd:nth-of-type(1)').innerHTML = this.year;
-  document.querySelector('#modal dl>dd:nth-of-type(2)').innerHTML = this.program;
+  document.querySelector('#modal dl>dd:nth-of-type(2)').innerHTML = this.program
   document.querySelector('#modal dl>dd:nth-of-type(3)>a').setAttribute('href', this.url);
   document.querySelector('#modal dl>dd:nth-of-type(3)>a').innerHTML = this.url;
   document.querySelector('#modal dl>dd:nth-of-type(4)').innerHTML = this.text;
@@ -82,16 +82,16 @@ let myModal = [
   new modalFunc('title05', './img/Ellipse-5', '2023', 'HTML, CSS, JS', 'http://www.e.com', 'text05'),
   new modalFunc('title06', './img/Ellipse-6', '2023', 'HTML, CSS, JS', 'http://www.f.com', 'text06')
 ];
-const portF = document.querySelectorAll('#box02 #all>figure');
+const portF = document.querySelector('#box02 #all>figure');
 const btnClose = document.querySelector('#modal .close');
 
 portF.forEach((item, index) => {
   item.addEventListener('click', function(){
     document.querySelector('#modal').style.display = 'block';
     myModal[index].viewAction();
-  })
-});
+  });
+})
 
-btnClose.addEventListener('click', function(){
+close.addEventListener('click', function(){
   document.querySelector('#modal').style.display = 'none';
-});
+})
