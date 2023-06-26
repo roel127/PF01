@@ -17,6 +17,7 @@ $(function(){
     scrollNav();
     scrollNavMobile();
     swipe();
+    backClick();
   }
 });
 
