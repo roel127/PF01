@@ -82,7 +82,7 @@ let myModal = [
   new modalFunc('title05', './img/Ellipse-5', '2023', 'HTML, CSS, JS', 'http://www.e.com', 'text05'),
   new modalFunc('title06', './img/Ellipse-6', '2023', 'HTML, CSS, JS', 'http://www.f.com', 'text06')
 ];
-const portF = document.querySelector('#box02 #all>figure');
+const portF = document.querySelectorAll('#box02 #all>figure');
 const btnClose = document.querySelector('#modal .close');
 
 portF.forEach((item, index) => {
@@ -92,6 +92,6 @@ portF.forEach((item, index) => {
   });
 })
 
-close.addEventListener('click', function(){
+btnClose.addEventListener('click', function(){
   document.querySelector('#modal').style.display = 'none';
 })
