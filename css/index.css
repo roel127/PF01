@@ -155,7 +155,7 @@ header nav .close{
   margin: 20px auto;
   height: 30px;
   text-indent: -99999px;
-  background: #fff url(../img/bar.png) no-repeat;
+  background: #fff url('../img/2985.jpg') no-repeat;
   background-size: 80% 100%;
   position: relative;
 }
@@ -164,6 +164,7 @@ header nav .close{
 #box01>.skill li:nth-of-type(4)>span{background-size: 60% 100%;}
 #box01>.skill li:nth-of-type(5)>span{background-size: 70% 100%;}
 #box01>.skill li:nth-of-type(6)>span{background-size: 80% 100%;}
+#box01 .skillMb{display: none;}
 
 /* #box02 */
 #box02{}
