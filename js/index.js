@@ -17,7 +17,7 @@ $(function(){
     scrollNav();
     scrollNavMobile();
     swipe();
-    backClick();
+    backgroundClick();
   }
 });
 
