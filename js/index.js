@@ -32,7 +32,7 @@ function scrollNav(){
 }
 function scrollNavMobile(){
   $('header .btn').on('click', function(){
-    $('header nav').show();
+    $('header nav').slideDown();
     $('header nav>.close').on('click', function(){
       $(this).parent().hide();
     })
