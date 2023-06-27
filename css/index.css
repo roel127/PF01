@@ -372,7 +372,6 @@ header nav .close{
 }
 
 /* top */
-#top{}
 #top a{
   position: fixed;
   width: 60px;
@@ -381,7 +380,7 @@ header nav .close{
   justify-content: center;
   align-items: center;
   bottom: 100px; right: 50px;
-  box-shadow: 1px 1px 3px #02000d,
+  box-shadow: 1px 1px 3px #fff,
   1px 1px 3px #02000d inset;
   color: #fff;
   text-shadow: 1px 1px 3px #000;

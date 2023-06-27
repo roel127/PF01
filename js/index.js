@@ -38,7 +38,7 @@ function navMobile(){
   $('header .btn').on('click', function(){
     $('header nav').slideDown();
     $('header nav>.close').on('click', function(){
-      $(this).parent().hide();
+      $(this).parent().slideUp();
     })
   })
 }
@@ -63,10 +63,15 @@ function swipe(){
   });
 }
 
+// gallery filter
+function galleryFilter(){
+  // filter의 string 값을 가져와서 포함 된 figure만 보이기
+}
+
 // modal
 function modalFunc(tl, pic, yr, pg, url, txt){
   this.title = tl;
-  this.pic = `${pic}.png`;
+  this.pic = `./img/${pic}.png`;
   this.year = yr;
   this.program = pg;
   this.url = url;
@@ -83,12 +88,12 @@ modalFunc.prototype.viewAction = function(){
   document.querySelector('#modal dl>dd:nth-of-type(4)').innerHTML = this.text;
 }
 let myModal = [
-  new modalFunc('title01', './img/Ellipse-1', '2023', 'HTML, CSS, JS', 'http://www.a.com', 'text01'),
-  new modalFunc('title02', './img/Ellipse-2', '2023', 'HTML, CSS, JS', 'http://www.b.com', 'text02'),
-  new modalFunc('title03', './img/Ellipse-3', '2023', 'HTML, CSS, JS', 'http://www.c.com', 'text03'),
-  new modalFunc('title04', './img/Ellipse-4', '2023', 'HTML, CSS, JS', 'http://www.d.com', 'text04'),
-  new modalFunc('title05', './img/Ellipse-5', '2023', 'HTML, CSS, JS', 'http://www.e.com', 'text05'),
-  new modalFunc('title06', './img/Ellipse-6', '2023', 'HTML, CSS, JS', 'http://www.f.com', 'text06')
+  new modalFunc('title01', 'Ellipse-1', '2023', 'HTML, CSS', 'http://www.a.com', 'text01'),
+  new modalFunc('title02', 'Ellipse-2', '2023', 'HTML, CSS', 'http://www.b.com', 'text02'),
+  new modalFunc('title03', 'Ellipse-3', '2023', 'HTML, CSS, JS', 'http://www.c.com', 'text03'),
+  new modalFunc('title04', 'Ellipse-4', '2023', 'HTML, CSS, JS', 'http://www.d.com', 'text04'),
+  new modalFunc('title05', 'Ellipse-5', '2023', 'HTML, CSS, JS, REACT', 'http://www.e.com', 'text05'),
+  new modalFunc('title06', 'Ellipse-6', '2023', 'HTML, CSS, JS, REACT', 'http://www.f.com', 'text06')
 ];
 
 const portF = document.querySelectorAll('#box02 #all>figure');
@@ -108,7 +113,7 @@ function backgroundClick(){
   $('#homeMain').on('click', function(){
     const aPos = $('#box01').offset().top;
     const headerHeight = $('header>div').innerHeight();
-    $('html, body').animate({scrollTop: aPos - headerHeight}, 800);
+    $('html, body').stop().animate({scrollTop: aPos - headerHeight}, 800);
   })
 }
 
@@ -118,14 +123,12 @@ function skillAct(){
     let sPercent = $(this).children().text();
     $('.skillPercent>span').css('background-size', sPercent + ' ' + '100%');
   })
-
 }
 
 // top button
 function top(){
   $('#top>a').on('click', function(){
-    $('html, body').animate({scrollTop: 0}, 700);
+    $('html, body').stop().animate({scrollTop: 0}, 500);
     return false;
   })
-
 }
