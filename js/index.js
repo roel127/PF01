@@ -5,19 +5,22 @@ $(function(){
   if(windowW > 1155){
     scrollNav();
     backgroundClick();
+    top();
   }else if(windowW <= 1154 && windowW > 980){
     scrollNav();
     backgroundClick();
+    top();
   }else if(windowW <= 979 && windowW > 580){
     scrollNav();
-    scrollNavMobile();
+    navMobile();
     swipe();
     backgroundClick();
   }else if(windowW <= 579){
     scrollNav();
-    scrollNavMobile();
+    navMobile();
     swipe();
     backgroundClick();
+    skillAct();
   }
 });
 
@@ -27,10 +30,11 @@ function scrollNav(){
     const hrefNav = $(this).attr('href');
     const aPos = $(hrefNav).offset().top;
     const headerHeight = $('header>div').innerHeight();
-    $('html, body').animate({scrollTop: aPos - headerHeight}, 800);
+    $('html, body').stop().animate({scrollTop: aPos - headerHeight}, 800);
+    return false;
   })
 }
-function scrollNavMobile(){
+function navMobile(){
   $('header .btn').on('click', function(){
     $('header nav').slideDown();
     $('header nav>.close').on('click', function(){
@@ -106,4 +110,22 @@ function backgroundClick(){
     const headerHeight = $('header>div').innerHeight();
     $('html, body').animate({scrollTop: aPos - headerHeight}, 800);
   })
+}
+
+// mobile skill bar
+function skillAct(){
+  $('.skillMb>ul>li').on('click', function(){
+    let sPercent = $(this).children().text();
+    $('.skillPercent>span').css('background-size', sPercent + ' ' + '100%');
+  })
+
+}
+
+// top button
+function top(){
+  $('#top>a').on('click', function(){
+    $('html, body').animate({scrollTop: 0}, 700);
+    return false;
+  })
+
 }

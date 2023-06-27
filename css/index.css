@@ -1,6 +1,7 @@
 /* font-family: 'Noto Sans', sans-serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 /* font-family: 'Comic Neue', cursive; */
+/* font-family: 'Archivo Narrow', sans-serif; */
 
 img{max-width: 100%;}
 /* 95% */
@@ -29,7 +30,8 @@ header>div{
 header>div>h1>a{
   font-size: 50px;
   color: #fff;
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Archivo Narrow', sans-serif;
+  text-shadow: 1px 1px 3px #000;
 }
 header .btn{
   position: absolute;
@@ -45,6 +47,7 @@ header nav>ul>li{
 header nav>ul>li>a{
   font-size: 20px;
   color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 header nav .close{
   position: absolute;
@@ -167,7 +170,6 @@ header nav .close{
 #box01 .skillMb{display: none;}
 
 /* #box02 */
-#box02{}
 #box02>div{
   width: 95% /* 1155px */;
   margin: 0 auto;
@@ -346,11 +348,10 @@ header nav .close{
   text-indent: 20px;
   margin-bottom: 30px;
   font-size: 25px;
-  border: none;
+  border: 1px solid rgb(200 200 200);
+  border-radius: 10px;
   background-color: rgba(0 0 0 /.1);
   color: rgb(183, 183, 240);
-}
-#box03>div form input,textarea{
 }
 #box03>div form textarea{
   height: 150px;
