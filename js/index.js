@@ -94,3 +94,12 @@ portF.forEach((item, index) => {
 btnClose.addEventListener('click', function(){
   document.querySelector('#modal').style.display = 'none';
 })
+
+// background click scroll
+function backClick(){
+  $('#homeMain').on('click', function(){
+    const aPos = $('#box01').offset().top;
+    const headerHeight = $('header>div').innerHeight();
+    $('html, body').animate({scrollTop: aPos - headerHeight}, 800);
+  })
+}
