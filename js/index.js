@@ -4,12 +4,15 @@ $(function(){
   let windowW = $(window).width();
   if(windowW > 1155){
     scrollNav();
+    backgroundClick();
   }else if(windowW <= 1154 && windowW > 980){
     scrollNav();
+    backgroundClick();
   }else if(windowW <= 979 && windowW > 580){
     scrollNav();
     scrollNavMobile();
     swipe();
+    backgroundClick();
   }else if(windowW <= 579){
     scrollNav();
     scrollNavMobile();
@@ -96,7 +99,7 @@ btnClose.addEventListener('click', function(){
 })
 
 // background click scroll
-function backClick(){
+function backgroundClick(){
   $('#homeMain').on('click', function(){
     const aPos = $('#box01').offset().top;
     const headerHeight = $('header>div').innerHeight();
