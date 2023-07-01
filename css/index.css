@@ -260,7 +260,7 @@ header nav .close{
   width: 980px;
   padding: 25px;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: rgb(32 32 32);
   position: fixed;
   left: 50%; top: 50%;
   margin: -251px 0 0 -490px;
@@ -273,6 +273,7 @@ header nav .close{
   font-size: 25px;
   text-align: center;
   margin-bottom: 40px;
+  color: #fff;
 }
 #modal>section>div{
   display: flex;
@@ -289,6 +290,7 @@ header nav .close{
 }
 #modal>section figure>figcaption{
   text-align: left;
+  color: rgb(200 200 200);
 }
 #modal>section dl{
   width: 470px;
@@ -300,6 +302,7 @@ header nav .close{
   padding-bottom: 20px;
   border-bottom: 1px solid #666;
   margin-bottom: 20px;
+  color: #fff;
 }
 #modal>section dl>dd{
   width: 66.6666666%;
@@ -307,6 +310,10 @@ header nav .close{
   padding-bottom: 20px;
   border-bottom: 1px solid #666;
   margin-bottom: 20px;
+  color: #fff;
+}
+#modal>section dl>dd>a{
+  color: #fff;
 }
 
 /* box03 */
