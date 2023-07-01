@@ -36,7 +36,7 @@ function scrollNav(){
 }
 function navMobile(){
   $('header .btn').on('click', function(){
-    $('header nav').slideDown();
+    $('header nav').slideToggle();
     $('header nav>.close').on('click', function(){
       $(this).parent().slideUp();
     })
